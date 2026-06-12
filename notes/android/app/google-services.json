@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "289627472402",
+    "firebase_url": "https://flutter-internship-db0a2-default-rtdb.firebaseio.com",
+    "project_id": "flutter-internship-db0a2",
+    "storage_bucket": "flutter-internship-db0a2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289627472402:android:e51b4bd56ac1d680cececb",
+        "android_client_info": {
+          "package_name": "com.example.notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxXS-3jAGp90u7Q0jHJYEkBLSNVQGiSYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289627472402:android:bc622923e3cbdf71cececb",
+        "android_client_info": {
+          "package_name": "com.example.todo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxXS-3jAGp90u7Q0jHJYEkBLSNVQGiSYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
