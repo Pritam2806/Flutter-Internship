@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {                 // Stateless widget
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
-                  child: NoteCard(note: note),
+                  child: NoteCard(note: note, index: index),
                 ),
               );
             },

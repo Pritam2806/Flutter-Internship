@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../models/note.dart';
 import '../services/firestore_service.dart';
 
@@ -105,14 +106,28 @@ class _NoteEditScreenState extends State<NoteEditScreen> {
             TextField(
               controller: _titleCtrl,
               decoration: const InputDecoration(hintText: 'Title'),
+              style: GoogleFonts.outfit(
+                fontSize: 24,
+                color: Colors.white,
+                fontWeight: FontWeight.bold
+              ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 20),
             Expanded(                                      // Expanded very important  for handling the Keypad
               child: TextField(
                 controller: _bodyCtrl,
                 maxLines: null,
                 expands: true,
+                onTap: () {
+                  // Clear selection when tapped to allow cursor placement
+                  _bodyCtrl.selection = TextSelection.collapsed(offset: _bodyCtrl.selection.baseOffset);
+                },
                 decoration: const InputDecoration(hintText: 'Body', border: InputBorder.none),
+                style: GoogleFonts.cabin(
+                  fontSize: 15,
+                  color: Colors.white70,
+                  fontWeight: FontWeight.w700
+                ),
               ),
             ),
           ],
